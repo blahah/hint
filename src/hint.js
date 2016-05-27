@@ -102,9 +102,9 @@ function move (elem) {
   }
   function transition (css) {
     var rule = 'transition';
-    var prefixes = ['', '-webkit-', '-moz-', '-o-', '-ms-'];
+    var prefixes = [''];
     function add (prefix) {
-      css[prefix + rule] = 'opacity 0.3s ease-in-out';
+      css[prefix + rule] = 'opacity 0.1s ease-in-out';
     }
     prefixes.forEach(add);
     return css;
